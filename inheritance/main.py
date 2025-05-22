@@ -31,16 +31,19 @@ class Truck(Vehicle):
 # Create instances of Car and Truck
 car = Car("Red", 120)  # Red car with initial speed 120
 truck = Truck("Blue", 80)  # Blue truck with initial speed 80
-print("The speed of the car  is")
+
+# Display initial speed of the car
+print("The speed of the car is")
 car.drive()
 
 # Accelerate the car 6 times (increasing speed by 10 each time)
 for i in range(6):
     car.accelerate()
 
-# Display final speed of the car
+# Display final speed of the car after acceleration
 print("The speed of the car after acceleration is")
 car.drive()
-# Display speed of the truck (unchanged)
+
+# Display speed of the truck (unchanged since we didn't accelerate it)
 print("The speed of the truck is")
 truck.drive()
